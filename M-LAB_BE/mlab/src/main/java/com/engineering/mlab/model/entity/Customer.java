@@ -1,4 +1,4 @@
-package com.engineering.mlab.model;
+package com.engineering.mlab.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Solutions {
+public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -1,6 +1,6 @@
 package com.engineering.mlab.controller;
 
-import com.engineering.mlab.model.Offers;
+import com.engineering.mlab.model.dto.OfferDTO;
 import com.engineering.mlab.service.OfferService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +15,7 @@ public class OffersWebService {
     private OfferService offerService;
 
     @GetMapping("code/{code}")
-    public Offers findByCode(@PathVariable String code) {
+    public OfferDTO findByCode(@PathVariable String code) {
         return offerService.findByCode(code);
     }
 
@@ -25,12 +25,12 @@ public class OffersWebService {
     }
 
     @PostMapping("/")
-    public Offers save(Offers offers) {
-        return offerService.save(offers);
+    public OfferDTO save(OfferDTO offerDTO) {
+        return offerService.save(offerDTO);
     }
 
     @GetMapping("/")
-    public List<Offers> findAll() {
+    public List<OfferDTO> findAll() {
         return offerService.findAll();
     }
 }

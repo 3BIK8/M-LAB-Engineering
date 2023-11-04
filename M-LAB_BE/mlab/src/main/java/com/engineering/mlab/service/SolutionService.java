@@ -1,17 +1,17 @@
 package com.engineering.mlab.service;
 
-import com.engineering.mlab.model.Solutions;
+import com.engineering.mlab.model.dto.SolutionDTO;
 
 import java.util.List;
 
 public interface SolutionService {
 
-    Solutions findByCode(String code);
+    SolutionDTO findByCode(String code);
 
     int deleteByCode(String code);
 
-    Solutions save(Solutions solutions);
+    SolutionDTO save(SolutionDTO solutionDTO);
 
-    List<Solutions> findAll();
+    List<SolutionDTO> findAll();
 
 }

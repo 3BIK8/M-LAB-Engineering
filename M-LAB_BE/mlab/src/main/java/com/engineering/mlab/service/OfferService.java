@@ -1,17 +1,17 @@
 package com.engineering.mlab.service;
 
-import com.engineering.mlab.model.Offers;
+import com.engineering.mlab.model.dto.OfferDTO;
 
 import java.util.List;
 
 public interface OfferService {
 
-    Offers findByCode(String code);
+    OfferDTO findByCode(String code);
 
     int deleteByCode(String code);
 
-    Offers save(Offers offers);
+    OfferDTO save(OfferDTO offerDTO);
 
-    List<Offers> findAll();
+    List<OfferDTO> findAll();
 
 }

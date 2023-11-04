@@ -1,6 +1,6 @@
 package com.engineering.mlab.controller;
 
-import com.engineering.mlab.model.Customers;
+import com.engineering.mlab.model.dto.CustomerDTO;
 import com.engineering.mlab.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +15,7 @@ public class CustomersWebService {
     private CustomerService customerService;
 
     @GetMapping("code/{code}")
-    public Customers findByCode(@PathVariable String code) {
+    public CustomerDTO findByCode(@PathVariable String code) {
         return customerService.findByCode(code);
     }
 
@@ -25,12 +25,12 @@ public class CustomersWebService {
     }
 
     @PostMapping("/")
-    public Customers save(Customers customers) {
-        return customerService.save(customers);
+    public CustomerDTO save(CustomerDTO customerDTO) {
+        return customerService.save(customerDTO);
     }
 
     @GetMapping("/")
-    public List<Customers> findAll() {
+    public List<CustomerDTO> findAll() {
         return customerService.findAll();
     }
 

@@ -1,6 +1,6 @@
 package com.engineering.mlab.controller;
 
-import com.engineering.mlab.model.Solutions;
+import com.engineering.mlab.model.dto.SolutionDTO;
 import com.engineering.mlab.service.SolutionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +15,7 @@ public class SolutionsWebService {
     private SolutionService solutionService;
 
     @GetMapping("code/{code}")
-    public Solutions findByCode(@PathVariable String code) {
+    public SolutionDTO findByCode(@PathVariable String code) {
         return solutionService.findByCode(code);
     }
 
@@ -25,12 +25,12 @@ public class SolutionsWebService {
     }
 
     @PostMapping("/")
-    public Solutions save(Solutions solutions) {
-        return solutionService.save(solutions);
+    public SolutionDTO save(SolutionDTO solutionDTO) {
+        return solutionService.save(solutionDTO);
     }
 
     @GetMapping("/")
-    public List<Solutions> findAll() {
+    public List<SolutionDTO> findAll() {
         return solutionService.findAll();
     }
 }
