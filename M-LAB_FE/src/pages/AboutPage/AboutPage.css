@@ -1,0 +1,11 @@
+.first {
+	background: url("../../../public/assets/aboutBg.jpg");
+	background-repeat: no-repeat;
+	height: max-content;
+}
+.second {
+	background: var(--background-image);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: max-content;
+}

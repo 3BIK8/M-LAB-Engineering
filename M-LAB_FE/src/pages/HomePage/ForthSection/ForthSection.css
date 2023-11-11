@@ -1,0 +1,81 @@
+.forth-section {
+	margin: var(--default-margin);
+	padding: 40px 0;
+	width: var(--container-width);
+	font-size: var(--fs-s);
+	font-family: var(--primary-font);
+	position: relative;
+}
+.circles-container {
+	height: 55rem;
+	width: 55rem;
+	border: 1rem solid var(--text-color);
+	border-radius: 50%;
+	margin: 4rem auto;
+	position: relative;
+	z-index: 1;
+}
+.circle {
+	border-radius: 50%;
+	position: absolute;
+	height: 14rem;
+	width: 14rem;
+	background: var(--gradient);
+	border: 0.5rem solid var(--text-color);
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 2;
+	cursor: pointer;
+}
+.c1 {
+	top: 0;
+	left: 50%;
+}
+.c2 {
+	top: 40%;
+	left: 0%;
+}
+.c3 {
+	top: 40%;
+	right: -25%;
+}
+.c4 {
+	bottom: -15%;
+	right: -12%;
+}
+.c5 {
+	bottom: -15%;
+	left: 15%;
+}
+.icon {
+	font-size: 4rem;
+}
+.solution {
+	font-weight: var(--fw-r);
+	text-transform: uppercase;
+}
+.circles-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: var(--fs-s);
+	font-weight: var(--fw-l);
+	width: 35ch;
+	text-align: center;
+	z-index: 9;
+}
+
+.circles-container .circles-content p {
+	display: none;
+}
+.circle-description {
+	display: none;
+}
+
+.circle-description.active {
+	display: block;
+}

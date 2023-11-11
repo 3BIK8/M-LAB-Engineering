@@ -1,0 +1,32 @@
+header {
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 8px 32px 0 rgba(87, 90, 139, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+}
+header nav {
+	height: 80px;
+	margin: var(--default-margin);
+	width: var(--container-width);
+	font-size: var(--fs-l);
+	font-family: var(--primary-font);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 55%;
+}
+.logo-container {
+	height: 70px;
+	width: 200px;
+	font-size: 0;
+}
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+.nav-link:hover a {
+	color: var(--secondary-color);
+	transition: var(--default-transition);
+}

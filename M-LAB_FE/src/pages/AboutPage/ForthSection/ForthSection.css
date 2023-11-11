@@ -1,0 +1,13 @@
+.about-forth-section {
+	margin: var(--default-margin);
+	padding: 40px 0;
+	width: var(--container-width);
+	font-size: var(--fs-s);
+	font-family: var(--primary-font);
+}
+.about-value-cards {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 2rem;
+}

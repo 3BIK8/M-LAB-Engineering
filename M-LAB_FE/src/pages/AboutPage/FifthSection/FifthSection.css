@@ -1,0 +1,14 @@
+.about-map-container {
+	height: 40rem;
+	width: 100%;
+	border: 1rem solid var(--primary-color);
+	border-radius: 2rem;
+	margin-top: 2rem;
+}
+.about-fifth-section {
+	margin: var(--default-margin);
+	padding: 40px 0;
+	width: var(--container-width);
+	font-size: var(--fs-s);
+	font-family: var(--primary-font);
+}
