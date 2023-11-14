@@ -1,10 +1,9 @@
 import React from "react";
 
 // AboutPage Components
-import Header from "../../components/Common/Header/Header";
+import FirstSection from "../../components/FirstSection/FirstSection";
 import Footer from "../../components/Common/Footer/Footer";
 
-import FirstSection from "./FirstSection/FirstSection";
 import SecondSection from "./SecondSection/SecondSection";
 import ThirdSection from "./ThirdSection/ThirdSection";
 import ForthSection from "./ForthSection/ForthSection";
@@ -15,10 +14,13 @@ import "./AboutPage.css";
 function AboutPage() {
 	return (
 		<>
-			<div className="first">
-				<Header />
-				<FirstSection />
-			</div>
+			<FirstSection
+				title="About Page Title"
+				quote="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque quod
+					id nisi."
+				backgroundImage="/assets/aboutBg.jpg"
+				// showButtonsAndQuote={false}
+			/>
 			<div className="second">
 				<SecondSection />
 				<ThirdSection />

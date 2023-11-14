@@ -1,10 +1,10 @@
-.first {
+/* .first {
 	background: url("../../../public/assets/bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	height: max-content;
-}
+} */
 .second {
 	background: var(--background-image);
 	background-repeat: no-repeat;

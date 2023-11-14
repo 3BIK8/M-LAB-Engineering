@@ -21,7 +21,7 @@ function Header() {
 						<Link to="/about">Our Offers</Link>
 					</li>
 					<li className="nav-link">
-						<Link to="/about">Contact</Link>
+						<Link to="/contact">Contact</Link>
 					</li>
 					{/* Add links for other pages */}
 				</ul>

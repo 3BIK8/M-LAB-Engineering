@@ -15,10 +15,10 @@ const ParticlesComponent = () => {
 		background: {
 			color: "rgb(10,10,25)",
 		},
-		fpsLimit: 90,
+		fpsLimit: 30,
 		particles: {
 			number: {
-				value: 60,
+				value: 100,
 				density: {
 					enable: true,
 					value_area: 800,
@@ -57,7 +57,7 @@ const ParticlesComponent = () => {
 				random: true,
 				anim: {
 					enable: false,
-					speed: 40,
+					speed: 10,
 					size_min: 0.1,
 					sync: false,
 				},
@@ -71,7 +71,7 @@ const ParticlesComponent = () => {
 			},
 			move: {
 				enable: true,
-				speed: 6,
+				speed: 2,
 				direction: "none",
 				random: false,
 				straight: false,
