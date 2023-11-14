@@ -1,7 +1,7 @@
 import React from "react";
-import "./SecondSection.css";
+import "./AboutSecondSection.css";
 
-function SecondSection() {
+function AboutSecondSection() {
 	return (
 		<section className="about-second-section">
 			<div className="about-second-image-container">
@@ -28,4 +28,4 @@ function SecondSection() {
 	);
 }
 
-export default SecondSection;
+export default AboutSecondSection;

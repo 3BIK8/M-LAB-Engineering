@@ -1,10 +1,10 @@
 import React from "react";
-import Card from "../../../components/Common/Card/Card";
-import "./ThirdSection.css";
+import Card from "../../Common/Card/Card";
+import "./AboutCardsSection.css";
 import { FaUserAlt } from "react-icons/fa";
 import faker from "faker";
 
-const ThirdSection = () => {
+const AboutCardsSection = () => {
 	const generateDummyCardData = () => {
 		return {
 			title: faker.name.findName(),
@@ -37,4 +37,4 @@ const ThirdSection = () => {
 	);
 };
 
-export default ThirdSection;
+export default AboutCardsSection;

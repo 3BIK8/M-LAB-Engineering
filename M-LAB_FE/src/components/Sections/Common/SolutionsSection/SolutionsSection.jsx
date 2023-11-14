@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FaLaptopCode, FaTrain, FaPlane, FaCar } from "react-icons/fa";
 import { FaChalkboardUser } from "react-icons/fa6";
-import "./ForthSection.css";
-const ForthSection = () => {
+import "./SolutionsSection.css";
+const SolutionsSection = () => {
 	const [activeCircle, setActiveCircle] = useState(null);
 
 	useEffect(() => {
@@ -109,4 +109,4 @@ const ForthSection = () => {
 	);
 };
 
-export default ForthSection;
+export default SolutionsSection;

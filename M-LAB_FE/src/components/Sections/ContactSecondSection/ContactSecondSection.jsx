@@ -1,11 +1,11 @@
 import React from "react";
-import ContactForm from "../../../components/ContactForm/ContactForm";
+import ContactForm from "../../ContactForm/ContactForm";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-import "./SecondSection.css";
+import "./ContactSecondSection.css";
 
-function SecondSection() {
+function ContactSecondSection() {
 	return (
 		<>
 			<section className="contact-second-section">
@@ -56,4 +56,4 @@ function SecondSection() {
 	);
 }
 
-export default SecondSection;
+export default ContactSecondSection;

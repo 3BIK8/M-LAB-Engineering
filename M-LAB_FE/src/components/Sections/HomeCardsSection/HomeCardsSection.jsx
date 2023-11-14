@@ -1,9 +1,9 @@
 import React from "react";
-import Card from "../../../components/Common/Card/Card";
-import "./ThirdSection.css";
+import Card from "../../Common/Card/Card";
+import "./HomeCardsSection.css";
 import { FaUserAlt, FaSuitcase } from "react-icons/fa";
 import { FaEarthAfrica } from "react-icons/fa6";
-function ThirdSection() {
+function HomeCardsSection() {
 	return (
 		<section className="third-section">
 			<Card
@@ -31,4 +31,4 @@ function ThirdSection() {
 	);
 }
 
-export default ThirdSection;
+export default HomeCardsSection;

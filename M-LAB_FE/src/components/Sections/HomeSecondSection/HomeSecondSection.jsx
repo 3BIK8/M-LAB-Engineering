@@ -1,7 +1,7 @@
 import React from "react";
-import "./SecondSection.css";
+import "./HomeSecondSection.css";
 
-function SecondSection() {
+function HomeSecondSection() {
 	return (
 		<section className="second-section">
 			<div className="content">
@@ -22,4 +22,4 @@ function SecondSection() {
 	);
 }
 
-export default SecondSection;
+export default HomeSecondSection;

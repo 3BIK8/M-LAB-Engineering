@@ -1,7 +1,7 @@
 import React from "react";
-import MapComponent from "../../../components/Common/MapComponent/MapComponent";
-import "./FifthSection.css";
-function FifthSection() {
+import MapComponent from "../../../Common/MapComponent/MapComponent";
+import "./MapSection.css";
+function MapSection() {
 	return (
 		<section className="about-fifth-section">
 			<h2 className="section-title">Our Address</h2>
@@ -12,4 +12,4 @@ function FifthSection() {
 	);
 }
 
-export default FifthSection;
+export default MapSection;

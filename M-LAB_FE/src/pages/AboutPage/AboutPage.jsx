@@ -1,13 +1,15 @@
 import React from "react";
 
 // AboutPage Components
-import FirstSection from "../../components/FirstSection/FirstSection";
-import Footer from "../../components/Common/Footer/Footer";
+import FirstSection from "../../components/Sections/Common/FirstSection/FirstSection";
+// import Footer from "../../components/Common/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
-import SecondSection from "./SecondSection/SecondSection";
-import ThirdSection from "./ThirdSection/ThirdSection";
-import ForthSection from "./ForthSection/ForthSection";
-import FifthSection from "./FifthSection/FifthSection";
+// AboutPage Sections
+import AboutSecondSection from "../../components/Sections/AboutSecondSection/AboutSecondSection";
+import AboutCardsSection from "../../components/Sections/AboutCardsSection/AboutCardsSection";
+import ValuesSection from "../../components/Sections/Common/ValuesSection/ValuesSection";
+import MapSection from "../../components/Sections/Common/MapSection/MapSection";
 
 import "./AboutPage.css";
 
@@ -19,13 +21,12 @@ function AboutPage() {
 				quote="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque quod
 					id nisi."
 				backgroundImage="/assets/aboutBg.jpg"
-				// showButtonsAndQuote={false}
 			/>
 			<div className="second">
-				<SecondSection />
-				<ThirdSection />
-				<ForthSection />
-				<FifthSection />
+				<AboutSecondSection />
+				<AboutCardsSection />
+				<ValuesSection />
+				<MapSection />
 			</div>
 			<Footer />
 		</>

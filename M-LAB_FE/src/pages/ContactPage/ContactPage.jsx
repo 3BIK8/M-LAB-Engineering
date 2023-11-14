@@ -1,16 +1,16 @@
 import React from "react";
 
 // AboutPage Components
-import Footer from "../../components/Common/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
-import FirstSection from "../../components/FirstSection/FirstSection";
+import FirstSection from "../../components/Sections/Common/FirstSection/FirstSection";
 
 import "./ContactPage.css";
-import SecondSection from "./SecondSection/SecondSection";
 import ParticlesComponent from "../../components/Common/Particles/ParticlesComponent";
-import FifthSection from "../AboutPage/FifthSection/FifthSection";
+import MapSection from "../../components/Sections/Common/MapSection/MapSection";
+import ContactSecondSection from "../../components/Sections/ContactSecondSection/ContactSecondSection";
 
-function AboutPage() {
+function ContactPage() {
 	return (
 		<>
 			<FirstSection
@@ -21,12 +21,12 @@ function AboutPage() {
 			/>
 			<div className="third">
 				<ParticlesComponent />
-				<SecondSection />
-				<FifthSection />
+				<ContactSecondSection />
+				<MapSection />
 			</div>
 			<Footer />
 		</>
 	);
 }
 
-export default AboutPage;
+export default ContactPage;

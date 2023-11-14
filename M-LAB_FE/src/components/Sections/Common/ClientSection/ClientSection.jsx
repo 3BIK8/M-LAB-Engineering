@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "./FifthSection.css";
+import "./ClientSection.css";
 
 // import Swiper core and required modules
 import SwiperCore from "swiper";
@@ -14,7 +14,7 @@ import "swiper/css/pagination";
 // install Swiper modules
 SwiperCore.use([Autoplay]);
 
-const FifthSection = () => {
+const ClientSection = () => {
 	return (
 		<div className="tst">
 			<section className="fifth-section">
@@ -37,4 +37,4 @@ const FifthSection = () => {
 	);
 };
 
-export default FifthSection;
+export default ClientSection;

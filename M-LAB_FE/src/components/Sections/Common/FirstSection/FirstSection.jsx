@@ -2,7 +2,7 @@
 import React from "react";
 import { FaArrowRight, FaQuoteRight } from "react-icons/fa";
 import "./FirstSection.css";
-import Header from "../Common/Header/Header";
+import Header from "../../../Header/Header";
 
 function FirstSection({
 	title,
